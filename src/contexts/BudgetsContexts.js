@@ -9,18 +9,7 @@ export function useBudgets() {
     return useContext(BudgetsContext);
 }
 
-// budget = {
-//     id: 1,
-//     name: "Entertainment",
-//     max
-// }
-
-// expenses = {
-//     id: 1,
-//     budgetId: 1,
-//     amount: 10,
-//     description: "Movie",
-// }
+export const UNCATEGORIZED_BUDGET_ID = "Uncategorized";
 
 export const BudgetsProvider = ({ children }) => {
     const [budgets, setBudgets] = useLocalStorage("budgets", [])
